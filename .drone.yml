@@ -3,7 +3,7 @@ build:
   pull: true
   shell: cygwin32
   commands:
-    - which texinfo
-    - texinfo --version
+    - which makeinfo
+    - makeinfo --version
     - ./configure
     - make -k

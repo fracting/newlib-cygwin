@@ -1,7 +1,7 @@
 build:
   image: fracting/cygwin32
   pull: true
-  shell: cygwin
+  shell: cygwin32
   commands:
     - ./configure
     - make

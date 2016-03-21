@@ -3,8 +3,8 @@ build:
   pull: true
   shell: cygwin32
   commands:
-    - c:/setup-x86.exe --site http://mirrors.kernel.org/sourceware/cygwin --local-package-dir Z:/tmp/cygwin -W -x texinfo -q > /dev/null
-    - c:/setup-x86.exe --site http://mirrors.kernel.org/sourceware/cygwin --local-package-dir Z:/tmp/cygwin -W -P texinfo -q > /dev/null
+    - c:/setup-x86.exe --site http://mirrors.kernel.org/sourceware/cygwin --local-package-dir Z:/tmp/cygwin -W -x texinfo,gawk -q > /dev/null
+    - c:/setup-x86.exe --site http://mirrors.kernel.org/sourceware/cygwin --local-package-dir Z:/tmp/cygwin -W -P texinfo,gawk -q > /dev/null
     - c:/setup-x86.exe --site http://mirrors.kernel.org/sourceware/cygwin --local-package-dir Z:/tmp/cygwin -W -P mingw64-x86_64-gcc-core xmlto -q > /dev/null
     - ./configure
     - make

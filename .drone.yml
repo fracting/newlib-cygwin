@@ -3,7 +3,8 @@ build:
   pull: true
   shell: cygwin32
   commands:
-    - /c/setup-x86.exe --site http://mirrors.kernel.org/sourceware/cygwin --local-package-dir Z:/tmp/cygwin -W -P texinfo -q
+    - ls C:/
+    - c:/setup-x86.exe --site http://mirrors.kernel.org/sourceware/cygwin --local-package-dir Z:/tmp/cygwin -W -P texinfo -q
     - which makeinfo
     - file /usr/bin/makeinfo
     - stat /usr/bin/makeinfo

@@ -7,6 +7,7 @@ build:
     - rm -vf /usr/bin/makeinfo
     - c:/setup-x86.exe --site http://mirrors.kernel.org/sourceware/cygwin --local-package-dir Z:/tmp/cygwin -W -x texinfo -q
     - c:/setup-x86.exe --site http://mirrors.kernel.org/sourceware/cygwin --local-package-dir Z:/tmp/cygwin -W -P texinfo -q
+    - c:/setup-x86.exe --site http://mirrors.kernel.org/sourceware/cygwin --local-package-dir Z:/tmp/cygwin -W -P mingw64-x86_64-gcc-core -q
     - which makeinfo
     - file /usr/bin/makeinfo
     - stat /usr/bin/makeinfo

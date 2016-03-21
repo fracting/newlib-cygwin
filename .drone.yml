@@ -6,6 +6,7 @@ build:
     - which makeinfo
     - file /usr/bin/makeinfo
     - stat /usr/bin/makeinfo
+    - cat /usr/bin/makeinfo
     - makeinfo --version
     - ./configure
     - make -k

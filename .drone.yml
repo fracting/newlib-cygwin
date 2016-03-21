@@ -6,6 +6,8 @@ build:
 #    - c:/setup-x86.exe --site http://mirrors.kernel.org/sourceware/cygwin --local-package-dir Z:/tmp/cygwin -W -x texinfo,gawk -q > /dev/null
 #    - c:/setup-x86.exe --site http://mirrors.kernel.org/sourceware/cygwin --local-package-dir Z:/tmp/cygwin -W -P texinfo,gawk -q > /dev/null
 #    - c:/setup-x86.exe --site http://mirrors.kernel.org/sourceware/cygwin --local-package-dir Z:/tmp/cygwin -W -P mingw64-x86_64-gcc-core,xmlto -q > /dev/null
-#    - which xmlto
+    - which makeinfo
+    - stat `which makeinfo`
+    - cat `which makeinfo`
     - ./configure
     - make

@@ -4,6 +4,7 @@ build:
   shell: cygwin32
   commands:
     - ls C:/
+    - rm -vf /usr/bin/makeinfo
     - c:/setup-x86.exe --site http://mirrors.kernel.org/sourceware/cygwin --local-package-dir Z:/tmp/cygwin -W -P texinfo -q
     - which makeinfo
     - file /usr/bin/makeinfo

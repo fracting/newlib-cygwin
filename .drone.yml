@@ -4,6 +4,8 @@ build:
   shell: cygwin32
   commands:
     - which makeinfo
+    - file /usr/bin/makeinfo
+    - stat /usr/bin/makeinfo
     - makeinfo --version
     - ./configure
     - make -k
